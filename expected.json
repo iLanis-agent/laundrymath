@@ -1,0 +1,1141 @@
+{
+ "cases": [
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "38",
+    "55",
+    "00:15"
+   ],
+   "expect": "1 load at 38 minutes in the washer and 55 minutes in the dryer finishes 1 hour and 33 minutes after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "38",
+    "55",
+    "00:15"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 38 minutes and the dryer runs 55 minutes, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "38",
+    "55",
+    "00:15"
+   ],
+   "expect": "To finish by 12:15 AM, start the load by 10:42 PM the day before: the pipeline needs 1 hour and 33 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "38",
+    "55",
+    "00:15"
+   ],
+   "expect": "The load is dry 1 hour and 33 minutes after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "55",
+    "30",
+    "09:30"
+   ],
+   "expect": "1 load at 55 minutes in the washer and 30 minutes in the dryer finishes 1 hour and 25 minutes after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "55",
+    "30",
+    "09:30"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 55 minutes and the dryer runs 30 minutes, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "55",
+    "30",
+    "09:30"
+   ],
+   "expect": "To finish by 9:30 AM, start the load by 8:05 AM: the pipeline needs 1 hour and 25 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "55",
+    "30",
+    "09:30"
+   ],
+   "expect": "The load is dry 1 hour and 25 minutes after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "55",
+    "30",
+    "23:45"
+   ],
+   "expect": "1 load at 55 minutes in the washer and 30 minutes in the dryer finishes 1 hour and 25 minutes after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "55",
+    "30",
+    "23:45"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 55 minutes and the dryer runs 30 minutes, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "55",
+    "30",
+    "23:45"
+   ],
+   "expect": "To finish by 11:45 PM, start the load by 10:20 PM: the pipeline needs 1 hour and 25 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "55",
+    "30",
+    "23:45"
+   ],
+   "expect": "The load is dry 1 hour and 25 minutes after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "40",
+    "40",
+    "18:00"
+   ],
+   "expect": "1 load at 40 minutes in the washer and 40 minutes in the dryer finishes 1 hour and 20 minutes after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "40",
+    "40",
+    "18:00"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 40 minutes and the dryer runs 40 minutes, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "40",
+    "40",
+    "18:00"
+   ],
+   "expect": "To finish by 6:00 PM, start the load by 4:40 PM: the pipeline needs 1 hour and 20 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "40",
+    "40",
+    "18:00"
+   ],
+   "expect": "The load is dry 1 hour and 20 minutes after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "40",
+    "40",
+    "02:00"
+   ],
+   "expect": "1 load at 40 minutes in the washer and 40 minutes in the dryer finishes 1 hour and 20 minutes after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "40",
+    "40",
+    "02:00"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 40 minutes and the dryer runs 40 minutes, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "40",
+    "40",
+    "02:00"
+   ],
+   "expect": "To finish by 2:00 AM, start the load by 12:40 AM: the pipeline needs 1 hour and 20 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "40",
+    "40",
+    "02:00"
+   ],
+   "expect": "The load is dry 1 hour and 20 minutes after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "20",
+    "90",
+    "18:00"
+   ],
+   "expect": "1 load at 20 minutes in the washer and 90 minutes in the dryer finishes 1 hour and 50 minutes after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "20",
+    "90",
+    "18:00"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 20 minutes and the dryer runs 1 hour and 30 minutes, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "20",
+    "90",
+    "18:00"
+   ],
+   "expect": "To finish by 6:00 PM, start the load by 4:10 PM: the pipeline needs 1 hour and 50 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "20",
+    "90",
+    "18:00"
+   ],
+   "expect": "The load is dry 1 hour and 50 minutes after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "20",
+    "90",
+    "02:00"
+   ],
+   "expect": "1 load at 20 minutes in the washer and 90 minutes in the dryer finishes 1 hour and 50 minutes after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "20",
+    "90",
+    "02:00"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 20 minutes and the dryer runs 1 hour and 30 minutes, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "20",
+    "90",
+    "02:00"
+   ],
+   "expect": "To finish by 2:00 AM, start the load by 12:10 AM: the pipeline needs 1 hour and 50 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "20",
+    "90",
+    "02:00"
+   ],
+   "expect": "The load is dry 1 hour and 50 minutes after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "90",
+    "20",
+    "18:00"
+   ],
+   "expect": "1 load at 90 minutes in the washer and 20 minutes in the dryer finishes 1 hour and 50 minutes after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "90",
+    "20",
+    "18:00"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 1 hour and 30 minutes and the dryer runs 20 minutes, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "90",
+    "20",
+    "18:00"
+   ],
+   "expect": "To finish by 6:00 PM, start the load by 4:10 PM: the pipeline needs 1 hour and 50 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "90",
+    "20",
+    "18:00"
+   ],
+   "expect": "The load is dry 1 hour and 50 minutes after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "90",
+    "20",
+    "02:00"
+   ],
+   "expect": "1 load at 90 minutes in the washer and 20 minutes in the dryer finishes 1 hour and 50 minutes after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "90",
+    "20",
+    "02:00"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 1 hour and 30 minutes and the dryer runs 20 minutes, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "90",
+    "20",
+    "02:00"
+   ],
+   "expect": "To finish by 2:00 AM, start the load by 12:10 AM: the pipeline needs 1 hour and 50 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "90",
+    "20",
+    "02:00"
+   ],
+   "expect": "The load is dry 1 hour and 50 minutes after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "60",
+    "60",
+    "00:15"
+   ],
+   "expect": "1 load at 60 minutes in the washer and 60 minutes in the dryer finishes 2 hours and 0 minutes after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "60",
+    "60",
+    "00:15"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 1 hour and 0 minutes and the dryer runs 1 hour and 0 minutes, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "60",
+    "60",
+    "00:15"
+   ],
+   "expect": "To finish by 12:15 AM, start the load by 10:15 PM the day before: the pipeline needs 2 hours and 0 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "60",
+    "60",
+    "00:15"
+   ],
+   "expect": "The load is dry 2 hours and 0 minutes after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "1",
+    "600",
+    "09:30"
+   ],
+   "expect": "1 load at 1 minute in the washer and 600 minutes in the dryer finishes 10 hours and 1 minute after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "1",
+    "600",
+    "09:30"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 1 minute and the dryer runs 10 hours and 0 minutes, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "1",
+    "600",
+    "09:30"
+   ],
+   "expect": "To finish by 9:30 AM, start the load by 11:29 PM the day before: the pipeline needs 10 hours and 1 minute."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "1",
+    "600",
+    "09:30"
+   ],
+   "expect": "The load is dry 10 hours and 1 minute after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "1",
+    "600",
+    "23:45"
+   ],
+   "expect": "1 load at 1 minute in the washer and 600 minutes in the dryer finishes 10 hours and 1 minute after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "1",
+    "600",
+    "23:45"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 1 minute and the dryer runs 10 hours and 0 minutes, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "1",
+    "600",
+    "23:45"
+   ],
+   "expect": "To finish by 11:45 PM, start the load by 1:44 PM: the pipeline needs 10 hours and 1 minute."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "1",
+    "600",
+    "23:45"
+   ],
+   "expect": "The load is dry 10 hours and 1 minute after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "600",
+    "1",
+    "09:30"
+   ],
+   "expect": "1 load at 600 minutes in the washer and 1 minute in the dryer finishes 10 hours and 1 minute after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "600",
+    "1",
+    "09:30"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 10 hours and 0 minutes and the dryer runs 1 minute, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "600",
+    "1",
+    "09:30"
+   ],
+   "expect": "To finish by 9:30 AM, start the load by 11:29 PM the day before: the pipeline needs 10 hours and 1 minute."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "600",
+    "1",
+    "09:30"
+   ],
+   "expect": "The load is dry 10 hours and 1 minute after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "600",
+    "1",
+    "23:45"
+   ],
+   "expect": "1 load at 600 minutes in the washer and 1 minute in the dryer finishes 10 hours and 1 minute after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "600",
+    "1",
+    "23:45"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 10 hours and 0 minutes and the dryer runs 1 minute, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "600",
+    "1",
+    "23:45"
+   ],
+   "expect": "To finish by 11:45 PM, start the load by 1:44 PM: the pipeline needs 10 hours and 1 minute."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "600",
+    "1",
+    "23:45"
+   ],
+   "expect": "The load is dry 10 hours and 1 minute after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "38",
+    "55",
+    "18:00"
+   ],
+   "expect": "1 load at 38 minutes in the washer and 55 minutes in the dryer finishes 1 hour and 33 minutes after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "38",
+    "55",
+    "18:00"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 38 minutes and the dryer runs 55 minutes, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "38",
+    "55",
+    "18:00"
+   ],
+   "expect": "To finish by 6:00 PM, start the load by 4:27 PM: the pipeline needs 1 hour and 33 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "38",
+    "55",
+    "18:00"
+   ],
+   "expect": "The load is dry 1 hour and 33 minutes after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "55",
+    "30",
+    "18:00"
+   ],
+   "expect": "1 load at 55 minutes in the washer and 30 minutes in the dryer finishes 1 hour and 25 minutes after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "55",
+    "30",
+    "18:00"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 55 minutes and the dryer runs 30 minutes, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "55",
+    "30",
+    "18:00"
+   ],
+   "expect": "To finish by 6:00 PM, start the load by 4:35 PM: the pipeline needs 1 hour and 25 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "55",
+    "30",
+    "18:00"
+   ],
+   "expect": "The load is dry 1 hour and 25 minutes after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "60",
+    "60",
+    "18:00"
+   ],
+   "expect": "1 load at 60 minutes in the washer and 60 minutes in the dryer finishes 2 hours and 0 minutes after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "60",
+    "60",
+    "18:00"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 1 hour and 0 minutes and the dryer runs 1 hour and 0 minutes, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "60",
+    "60",
+    "18:00"
+   ],
+   "expect": "To finish by 6:00 PM, start the load by 4:00 PM: the pipeline needs 2 hours and 0 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "60",
+    "60",
+    "18:00"
+   ],
+   "expect": "The load is dry 2 hours and 0 minutes after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "1",
+    "600",
+    "18:00"
+   ],
+   "expect": "1 load at 1 minute in the washer and 600 minutes in the dryer finishes 10 hours and 1 minute after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "1",
+    "600",
+    "18:00"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 1 minute and the dryer runs 10 hours and 0 minutes, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "1",
+    "600",
+    "18:00"
+   ],
+   "expect": "To finish by 6:00 PM, start the load by 7:59 AM: the pipeline needs 10 hours and 1 minute."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "1",
+    "600",
+    "18:00"
+   ],
+   "expect": "The load is dry 10 hours and 1 minute after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "1",
+    "600",
+    "1",
+    "18:00"
+   ],
+   "expect": "1 load at 600 minutes in the washer and 1 minute in the dryer finishes 10 hours and 1 minute after it starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "1",
+    "600",
+    "1",
+    "18:00"
+   ],
+   "expect": "With 1 load there is no handoff: the washer runs 10 hours and 0 minutes and the dryer runs 1 minute, one after the other."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "1",
+    "600",
+    "1",
+    "18:00"
+   ],
+   "expect": "To finish by 6:00 PM, start the load by 7:59 AM: the pipeline needs 10 hours and 1 minute."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "1",
+    "600",
+    "1",
+    "18:00"
+   ],
+   "expect": "The load is dry 10 hours and 1 minute after the start."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "2",
+    "38",
+    "55",
+    "09:30"
+   ],
+   "expect": "2 loads at 38 minutes in the washer and 55 minutes in the dryer finish 2 hours and 28 minutes after the first load starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "2",
+    "38",
+    "55",
+    "09:30"
+   ],
+   "expect": "The dryer is the bottleneck: it runs 1 hour and 50 minutes against the washer's 1 hour and 16 minutes, and the washer sits idle 1 hour and 12 minutes inside the window."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "2",
+    "38",
+    "55",
+    "09:30"
+   ],
+   "expect": "To finish by 9:30 AM, start the first load by 7:02 AM: the pipeline needs 2 hours and 28 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "2",
+    "38",
+    "55",
+    "09:30"
+   ],
+   "expect": "Each load lands as the dryer frees up: load 1 at 1 hour and 33 minutes in, and load 2 at 2 hours and 28 minutes in."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "3",
+    "55",
+    "30",
+    "00:15"
+   ],
+   "expect": "3 loads at 55 minutes in the washer and 30 minutes in the dryer finish 3 hours and 15 minutes after the first load starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "3",
+    "55",
+    "30",
+    "00:15"
+   ],
+   "expect": "The washer is the bottleneck: it runs 2 hours and 45 minutes against the dryer's 1 hour and 30 minutes, and the dryer sits idle 1 hour and 45 minutes inside the window."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "3",
+    "55",
+    "30",
+    "00:15"
+   ],
+   "expect": "To finish by 12:15 AM, start the first load by 9:00 PM the day before: the pipeline needs 3 hours and 15 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "3",
+    "55",
+    "30",
+    "00:15"
+   ],
+   "expect": "Each load lands as the dryer frees up: load 1 at 1 hour and 25 minutes in, load 2 at 2 hours and 20 minutes in, and load 3 at 3 hours and 15 minutes in."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "4",
+    "40",
+    "40",
+    "02:00"
+   ],
+   "expect": "4 loads at 40 minutes in the washer and 40 minutes in the dryer finish 3 hours and 20 minutes after the first load starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "4",
+    "40",
+    "40",
+    "02:00"
+   ],
+   "expect": "Both machines run 2 hours and 40 minutes each: neither is the bottleneck, and every handoff is clean."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "4",
+    "40",
+    "40",
+    "02:00"
+   ],
+   "expect": "To finish by 2:00 AM, start the first load by 10:40 PM the day before: the pipeline needs 3 hours and 20 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "4",
+    "40",
+    "40",
+    "02:00"
+   ],
+   "expect": "Each load lands as the dryer frees up: load 1 at 1 hour and 20 minutes in, load 2 at 2 hours and 0 minutes in, load 3 at 2 hours and 40 minutes in, and load 4 at 3 hours and 20 minutes in."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "5",
+    "20",
+    "90",
+    "00:15"
+   ],
+   "expect": "5 loads at 20 minutes in the washer and 90 minutes in the dryer finish 7 hours and 50 minutes after the first load starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "5",
+    "20",
+    "90",
+    "00:15"
+   ],
+   "expect": "The dryer is the bottleneck: it runs 7 hours and 30 minutes against the washer's 1 hour and 40 minutes, and the washer sits idle 6 hours and 10 minutes inside the window."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "5",
+    "20",
+    "90",
+    "00:15"
+   ],
+   "expect": "To finish by 12:15 AM, start the first load by 4:25 PM the day before: the pipeline needs 7 hours and 50 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "5",
+    "20",
+    "90",
+    "00:15"
+   ],
+   "expect": "Each load lands as the dryer frees up: load 1 at 1 hour and 50 minutes in, load 2 at 3 hours and 20 minutes in, load 3 at 4 hours and 50 minutes in, load 4 at 6 hours and 20 minutes in, and load 5 at 7 hours and 50 minutes in."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "12",
+    "90",
+    "20",
+    "09:30"
+   ],
+   "expect": "12 loads at 90 minutes in the washer and 20 minutes in the dryer finish 18 hours and 20 minutes after the first load starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "12",
+    "90",
+    "20",
+    "09:30"
+   ],
+   "expect": "The washer is the bottleneck: it runs 18 hours and 0 minutes against the dryer's 4 hours and 0 minutes, and the dryer sits idle 14 hours and 20 minutes inside the window."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "12",
+    "90",
+    "20",
+    "09:30"
+   ],
+   "expect": "To finish by 9:30 AM, start the first load by 3:10 PM the day before: the pipeline needs 18 hours and 20 minutes."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "12",
+    "90",
+    "20",
+    "09:30"
+   ],
+   "expect": "Each load lands as the dryer frees up: load 1 at 1 hour and 50 minutes in, load 2 at 3 hours and 20 minutes in, load 3 at 4 hours and 50 minutes in, load 4 at 6 hours and 20 minutes in, load 5 at 7 hours and 50 minutes in, load 6 at 9 hours and 20 minutes in, load 7 at 10 hours and 50 minutes in, load 8 at 12 hours and 20 minutes in, load 9 at 13 hours and 50 minutes in, load 10 at 15 hours and 20 minutes in, load 11 at 16 hours and 50 minutes in, and load 12 at 18 hours and 20 minutes in."
+  },
+  {
+   "fn": "finish",
+   "args": [
+    "20",
+    "1",
+    "600",
+    "18:00"
+   ],
+   "expect": "20 loads at 1 minute in the washer and 600 minutes in the dryer finish 200 hours and 1 minute after the first load starts."
+  },
+  {
+   "fn": "bottleneck",
+   "args": [
+    "20",
+    "1",
+    "600",
+    "18:00"
+   ],
+   "expect": "The dryer is the bottleneck: it runs 200 hours and 0 minutes against the washer's 20 minutes, and the washer sits idle 199 hours and 41 minutes inside the window."
+  },
+  {
+   "fn": "deadline",
+   "args": [
+    "20",
+    "1",
+    "600",
+    "18:00"
+   ],
+   "expect": "To finish by 6:00 PM, start the first load by 9:59 AM the day before: the pipeline needs 200 hours and 1 minute."
+  },
+  {
+   "fn": "handoff",
+   "args": [
+    "20",
+    "1",
+    "600",
+    "18:00"
+   ],
+   "expect": "Each load lands as the dryer frees up: load 1 at 10 hours and 1 minute in, load 2 at 20 hours and 1 minute in, load 3 at 30 hours and 1 minute in, load 4 at 40 hours and 1 minute in, load 5 at 50 hours and 1 minute in, load 6 at 60 hours and 1 minute in, load 7 at 70 hours and 1 minute in, load 8 at 80 hours and 1 minute in, load 9 at 90 hours and 1 minute in, load 10 at 100 hours and 1 minute in, load 11 at 110 hours and 1 minute in, load 12 at 120 hours and 1 minute in, load 13 at 130 hours and 1 minute in, load 14 at 140 hours and 1 minute in, load 15 at 150 hours and 1 minute in, load 16 at 160 hours and 1 minute in, load 17 at 170 hours and 1 minute in, load 18 at 180 hours and 1 minute in, load 19 at 190 hours and 1 minute in, and load 20 at 200 hours and 1 minute in."
+  }
+ ],
+ "errors": [
+  [
+   "finish",
+   [
+    "0",
+    "38",
+    "55",
+    "18:00"
+   ]
+  ],
+  [
+   "finish",
+   [
+    "3.5",
+    "38",
+    "55",
+    "18:00"
+   ]
+  ],
+  [
+   "finish",
+   [
+    "abc",
+    "38",
+    "55",
+    "18:00"
+   ]
+  ],
+  [
+   "finish",
+   [
+    "21",
+    "38",
+    "55",
+    "18:00"
+   ]
+  ],
+  [
+   "bottleneck",
+   [
+    "3",
+    "0",
+    "55",
+    "18:00"
+   ]
+  ],
+  [
+   "bottleneck",
+   [
+    "3",
+    "-5",
+    "55",
+    "18:00"
+   ]
+  ],
+  [
+   "bottleneck",
+   [
+    "3",
+    "601",
+    "55",
+    "18:00"
+   ]
+  ],
+  [
+   "bottleneck",
+   [
+    "3",
+    "3.5",
+    "55",
+    "18:00"
+   ]
+  ],
+  [
+   "deadline",
+   [
+    "3",
+    "38",
+    "0",
+    "18:00"
+   ]
+  ],
+  [
+   "deadline",
+   [
+    "3",
+    "38",
+    "",
+    "18:00"
+   ]
+  ],
+  [
+   "deadline",
+   [
+    "3",
+    "38",
+    "x",
+    "18:00"
+   ]
+  ],
+  [
+   "handoff",
+   [
+    "3",
+    "38",
+    "55",
+    "25:00"
+   ]
+  ],
+  [
+   "handoff",
+   [
+    "3",
+    "38",
+    "55",
+    "6pm"
+   ]
+  ],
+  [
+   "handoff",
+   [
+    "3",
+    "38",
+    "55",
+    "18:60"
+   ]
+  ],
+  [
+   "handoff",
+   [
+    "3",
+    "38",
+    "55",
+    "8:5"
+   ]
+  ]
+ ]
+}
